@@ -1,0 +1,33 @@
+{ = LlaveInicio
+// Prueba de fuegox26 = Identificador
+= = Asignacion
+3.141592 = Numero
+/**++ = IncTermino
++ = OpTermino
+/***-- = IncTermino
+- = OpTermino
+/****&& = OpLogico
+& = Caracter
+|| = OpLogico
+| = Caracter
+== = OpRelacional
+= = Asignacion
+! = Caracter
+!= = OpRelacional
+= = Asignacion
+//Test< = OpRelacional
+< = OpRelacional
+<> = OpRelacional
+> = OpRelacional
+> = OpRelacional
+"Hola mundo" = Cadena
+; = FinSentencia
+/*Cadena Vacia*"" = Cadena
+; = FinSentencia
++= = IncTermino
+-= = IncTermino
+*= = IncFactor
+/= = IncFactor
+%= = IncFactor
+} = LlaveFin
+Error Lexico: Se espera un digito
