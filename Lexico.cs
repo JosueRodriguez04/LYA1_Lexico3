@@ -176,13 +176,24 @@ namespace LYA1_Lexico3
                     {
                         buffer += c;
                     }
+                    else
+                    {
+                        buffer = "";
+                    }
+
                     archivo.Read();
                 }
             }
             if (estado == E)
             {
+                if (getClasificacion() == Tipos.Numero)
+                {
                     throw new Error("Lexico: Se espera un digito", log);
+                }
+                else
+                {
                     throw new Error("Lexico: La cadena no se ha cerrado", log);
+                }
             }
             setContenido(buffer);
             log.WriteLine(getContenido() + " = " + getClasificacion());
